@@ -25,4 +25,5 @@
             ]
         }
     },
+  "postCreateCommand": "git clone https://github.com/airockchip/rknn_model_zoo.git"
 }
