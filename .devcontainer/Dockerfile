@@ -37,9 +37,6 @@ RUN pip3 install --upgrade jupyter --break-system-packages
 
 RUN pip3 install "numpy<2" --break-system-packages
 
-# 克隆RKNN模型仓库
-RUN git clone https://github.com/airockchip/rknn_model_zoo.git
-
 # 清理缓存
 RUN pip3 cache purge
 
