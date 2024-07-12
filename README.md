@@ -7,8 +7,8 @@
 2. 点击右上角绿色按钮 Use this template -> Open in a codespace
 3. 等待十几分钟环境自动搭建完成后即可使用
 4. 记得右键点击你转好的模型或者编译好的程序文件夹，下载到电脑上
-5. 可以去https://github.com/codespaces管理你创建的开发环境。用完可以直接删掉, 下次再次创建即可
-   
+5. 可以去 https://github.com/codespaces 管理你创建的开发环境。用完可以直接删掉, 下次再次创建即可
+
 ## 如何连接板子
 
 TODO
