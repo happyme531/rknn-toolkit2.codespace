@@ -1,0 +1,8 @@
+{
+  "name": "RKNN Toolkit2 Development Container",
+  "dockerFile": "Dockerfile",
+  "features": {
+    "ghcr.io/meaningful-ooo/devcontainer-features/fish:1": {},
+    "ghcr.io/devcontainers/features/desktop-lite:1": {}
+  }
+}
