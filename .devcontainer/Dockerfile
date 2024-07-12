@@ -13,7 +13,11 @@ RUN apt-get update && apt-get install -y \
     clangd \
     adb \
     gcc-aarch64-linux-gnu \
+    g++-aarch64-linux-gnu \
     wget \
+    bear \
+    cmake \
+    python-is-python3 \
     && apt-get clean \
     && rm -rf /var/lib/apt/lists/*
 
@@ -30,6 +34,8 @@ RUN wget https://github.com/airockchip/rknn-toolkit2/raw/master/rknn-toolkit2/pa
 
 # Jupyter notebook!
 RUN pip3 install --upgrade jupyter --break-system-packages
+
+RUN pip3 install "numpy<2" --break-system-packages
 
 # 克隆RKNN模型仓库
 RUN git clone https://github.com/airockchip/rknn_model_zoo.git
