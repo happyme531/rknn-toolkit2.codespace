@@ -18,7 +18,7 @@ RUN apt-get update && apt-get install -y \
     && rm -rf /var/lib/apt/lists/*
 
 # 设置工作目录
-WORKDIR /workspace
+WORKDIR /workspaces
 
 # 下载并安装RKNN Toolkit 2
 RUN wget https://github.com/airockchip/rknn-toolkit2/raw/master/rknn-toolkit2/packages/rknn_toolkit2-2.0.0b0%2B9bab5682-cp311-cp311-linux_x86_64.whl \
@@ -26,7 +26,10 @@ RUN wget https://github.com/airockchip/rknn-toolkit2/raw/master/rknn-toolkit2/pa
     && rm rknn_toolkit2-2.0.0b0+9bab5682-cp311-cp311-linux_x86_64.whl
 
 # 安装最新版PyTorch
-RUN pip3 install --upgrade torch torchvision torchaudio jupyter --break-system-packages
+# RUN pip3 install --upgrade torch torchvision torchaudio --break-system-packages
+
+# Jupyter notebook!
+RUN pip3 install --upgrade jupyter --break-system-packages
 
 # 克隆RKNN模型仓库
 RUN git clone https://github.com/airockchip/rknn_model_zoo.git
