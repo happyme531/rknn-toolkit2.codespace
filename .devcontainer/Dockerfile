@@ -25,9 +25,9 @@ RUN apt-get update && apt-get install -y \
 WORKDIR /workspaces
 
 # 下载并安装RKNN Toolkit 2
-RUN wget https://github.com/airockchip/rknn-toolkit2/raw/master/rknn-toolkit2/packages/rknn_toolkit2-2.0.0b0%2B9bab5682-cp311-cp311-linux_x86_64.whl \
-    && pip3 install rknn_toolkit2-2.0.0b0+9bab5682-cp311-cp311-linux_x86_64.whl --break-system-packages \
-    && rm rknn_toolkit2-2.0.0b0+9bab5682-cp311-cp311-linux_x86_64.whl
+RUN wget https://github.com/airockchip/rknn-toolkit2/raw/master/rknn-toolkit2/packages/rknn_toolkit2-2.1.0+708089d1-cp311-cp311-linux_x86_64.whl \
+    && pip3 install rknn_toolkit2-2.1.0+708089d1-cp311-cp311-linux_x86_64.whl --break-system-packages \
+    && rm rknn_toolkit2-2.1.0+708089d1-cp311-cp311-linux_x86_64.whl
 
 # 安装最新版PyTorch
 # RUN pip3 install --upgrade torch torchvision torchaudio --break-system-packages
